@@ -16,8 +16,8 @@ import { RoomService } from '../room/room.service'
 
 @WebSocketGateway({
   cors: {
-    origin: 'http://localhost:3000',
-    method: ['GET', 'POST'],
+    origin: ['http://localhost:3000', 'https://tmk-v.ru'],
+    methods: ['GET', 'POST'],
   },
 })
 export class SocketGateway implements OnModuleInit {
